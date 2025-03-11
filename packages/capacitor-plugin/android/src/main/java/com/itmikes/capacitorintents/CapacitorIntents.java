@@ -70,6 +70,7 @@ public class CapacitorIntents extends Plugin {
             for (int i = 0; i < jsArr.length(); i++) {
                 ifilt.addAction(jsArr.getString(i));
             }
+            ifilt.addCategory("android.intent.category.DEFAULT");
             receiverMap.put(
                 callBackID,
                 new BroadcastReceiver() {
